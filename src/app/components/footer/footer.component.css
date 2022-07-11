@@ -1,8 +1,10 @@
 .footer{
+    background-color: lightslategray;
+    color: white;
     position: fixed;
     bottom: 0%;
     border: 1px solid black;
     width: 100%;
     text-align: center;    
-    
+   
 }

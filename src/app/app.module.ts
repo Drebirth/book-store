@@ -11,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LojaListaComponent } from './pages/loja-lista/loja-lista.component';
 import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { FilterComponent } from './components/filter/filter.component';
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import {MatCardModule} from '@angular/material/card';
     FooterComponent,
     LojaListaComponent,
     CardComponent,
+    FilterComponent,
     
     
   ],
@@ -29,7 +32,9 @@ import {MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
