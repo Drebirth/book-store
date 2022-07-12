@@ -8,11 +8,13 @@ import { HomeComponent } from './pages/home/home.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
-import { LojaListaComponent } from './pages/loja-lista/loja-lista.component';
-import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-import { FilterComponent } from './components/filter/filter.component';
+import { CardListComponent } from './pages/card-list/card-list.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+
+
 
 
 @NgModule({
@@ -21,9 +23,8 @@ import { FilterComponent } from './components/filter/filter.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    LojaListaComponent,
-    CardComponent,
-    FilterComponent,
+    CardListComponent,
+    
     
     
   ],
@@ -33,7 +34,9 @@ import { FilterComponent } from './components/filter/filter.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule
     
   ],
   providers: [],

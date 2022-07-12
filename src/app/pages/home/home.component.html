@@ -1,11 +1,16 @@
 <app-header></app-header>
 <div class="container">
-    <h2>
-        Bem vindo a Book Store
-    </h2> 
-    <app-filter></app-filter>
-    <div class="card">
-        <app-loja-lista></app-loja-lista>
+    <div class="filtro">
+        <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Buscar pelo produto</mat-label>
+            <input matInput type="text" >
+            <button *ngIf="" matSuffix mat-icon-button aria-label="Clear" >
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
     </div>
 </div>
-<app-footer></app-footer>
+    <div class="card">
+        <app-card-list></app-card-list>
+    </div>
+
